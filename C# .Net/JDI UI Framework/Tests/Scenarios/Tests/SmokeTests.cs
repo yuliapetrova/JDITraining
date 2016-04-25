@@ -16,7 +16,7 @@ namespace Epam.Tests.Scenarios.Tests
             CareerPage.CheckOpened();
             CareerPage.JobFilter.Search(attendee.Filter);
             JobListingPage.CheckOpened();
-            //new Check("Table is not empty").isFalse(jobListingPage.jobsList::isEmpty);
+           // new Check("Table is not empty").isFalse(jobListingPage.jobsList::isEmpty);
             JobListingPage.GetJobRowByName("Senior QA Automation Engineer");
             JobDescriptionPage.AddCvForm.Submit(attendee);
             //new Check("Captcha").Contains(()->jobDescriptionPage.captcha.getAttribute("class"), "form-field-error");

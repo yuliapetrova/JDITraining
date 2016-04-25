@@ -35,10 +35,7 @@ namespace Epam.JDI.Web.Selenium.Elements.Complex
         public Action<ComboBox<TEnum>, string> InputAction = 
             (c, text) => c.TextField.SendKeys(text);
 
-        public void ClearAction()
-        {
-            TextField.Clear();
-        }
+        public Action<ComboBox> ClearAction = c => c.TextField.Clear();
 
         public void FocusAction()
         {

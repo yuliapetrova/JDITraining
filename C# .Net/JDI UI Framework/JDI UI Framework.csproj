@@ -225,6 +225,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Tests\Scenarios\Entities\Attendee.cs" />
+    <Compile Include="Tests\Scenarios\Entities\Customer.cs" />
     <Compile Include="Tests\Scenarios\Entities\JobSearchFilter.cs" />
     <Compile Include="Tests\Scenarios\Entities\User.cs" />
     <Compile Include="Tests\Scenarios\Enums\HeaderMenuvalues.cs" />
@@ -237,9 +238,12 @@
     <Compile Include="Tests\Scenarios\Page Objects\Pages\HomePage.cs" />
     <Compile Include="Tests\Scenarios\Page Objects\Pages\JobDescriptionPage.cs" />
     <Compile Include="Tests\Scenarios\Page Objects\Pages\JobListingPage.cs" />
+    <Compile Include="Tests\Scenarios\Page Objects\Pages\RequestInfoPage.cs" />
     <Compile Include="Tests\Scenarios\Page Objects\Sections\AddCVform.cs" />
     <Compile Include="Tests\Scenarios\Page Objects\Sections\JobFilter.cs" />
+    <Compile Include="Tests\Scenarios\Page Objects\Sections\RegistrationForm.cs" />
     <Compile Include="Tests\Scenarios\Tests\ElementsCheckTests.cs" />
+    <Compile Include="Tests\Scenarios\Tests\RequestInfoPageTests.cs" />
     <Compile Include="Tests\Scenarios\Tests\SmokeTests.cs" />
     <Compile Include="Tests\Scenarios\Tests\TestsBase.cs" />
     <Compile Include="Tests\TableTest.cs" />
@@ -290,7 +294,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tests\TutorialTests\README.txt" />
+    <Folder Include="Tests\TutorialTests\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -20,11 +20,19 @@ namespace Epam.Tests.Scenarios.Page_Objects
         [Page(Url = "/careers/job-listings", Title = "Job Listings", UrlCheckType = Contain, TitleCheckType = Contain)]
         public static JobListingPage JobListingPage;
 
-        [Page(Url = ".*/careers/job-listings/job\\.\\d*#apply", UrlCheckType = Match)]
+        [Page(Url = ".*/careers/job-listings", UrlCheckType = Match)]
         public static JobDescriptionPage JobDescriptionPage;
+
+        [Page(Url = "/request-information", Title = "Request Information")]
+        public static RequestInfoPage RequestInfoPage;
+
 
         [FindBy(Css = ".tile-menu>li>a")]
         public static Menu<HeaderMenuValues> HeaderMenu;
+
+      
+
+
 
         [FindBy(Css = ".tile-menu>li>a")]
         public static IList<Label> ListMenu;
